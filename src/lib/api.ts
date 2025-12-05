@@ -11,7 +11,7 @@ export interface Product {
   }
 }
 
-const API_BASE_URL = "https://fakestoreapi.com"
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://fakestoreapi.com"
 
 export async function fetchProducts(): Promise<Product[]> {
   const response = await fetch(`${API_BASE_URL}/products`)
