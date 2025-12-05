@@ -1,7 +1,9 @@
 {
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "build": {
+    "outputDirectory": "dist"
+  },
   "rewrites": [
     {
       "source": "/(.*)",
